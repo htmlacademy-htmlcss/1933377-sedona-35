@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alisa Romanova](https://up.htmlacademy.ru/htmlcss/35/user/1933377).
-* Наставник: `Неизвестно`.
+* Наставник: [Надежда Палаш](https://htmlacademy.ru/profile/id1191579).
 
 ---
 
