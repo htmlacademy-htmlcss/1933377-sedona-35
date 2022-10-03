@@ -22,7 +22,6 @@
             <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -35,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-link">Хочу сюда!</a>
+            <a class="button navigation-link" href="">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -43,15 +42,15 @@
 
     <main class="main-inner">
       <header class="catalog-header">
-            <h1 class="catalog-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную</span></a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
-                </li>
-              </ul>
+        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную</span></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
       </header>
 
       <section class="filters">
@@ -97,11 +96,11 @@
 
       <section class="catalog-sort">
         <p class="catalog-sort-result">Найдено гостниц: <span>38</span></p>
-        <select class="catalog-sort-price" aria-lable="Сортировка по цене">
+        <select class="catalog-sort-price" aria-label="Сортировка по цене">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="catalog-sort-view sort-cards-current" href="#">
+        <a class="catalog-sort-view sort-cards-current">
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="catalog-sort-view sort-card" href="#">
@@ -117,7 +116,7 @@
           <li class="cards-item">
             <a class="card-link" href="">
               <img class="card-img" src="" alt="Amara Resort & Spa">
-              <p class="card-title">Amara Resort & Spa</p>
+              <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
             <span class="card-hotel-type">Гостиница</span>
             <b class="card-price">От 4000 ₽</b>
@@ -128,14 +127,73 @@
             </p>
             <p class="card-rating">Рейтинг: 8,5</p>
           </li>
+          <li class="cards-item">
+            <a class="card-link" href="">
+              <img class="card-img" src="" alt="Villas at Poco Diablo">
+              <h3 class="card-title">Villas at Poco Diablo</h3>
+            </a>
+            <span class="card-hotel-type">Гостиница</span>
+            <b class="card-price">От 5000 ₽</b>
+            <a class="button card-link" href="">Подробнее</a>
+            <button class="button card-favorites-btn-checked">В избранном</button>
+            <p class="card-stars stars-4">
+              <span class="visually-hidden">4 звезды</span>
+            </p>
+            <p class="card-rating">Рейтинг: 9,2</p>
+          </li>
+          <li class="cards-item">
+            <a class="card-link" href="">
+              <img class="card-img" src="" alt="Desert Quail Inn">
+              <h3 class="card-title">Desert Quail Inn</h3>
+            </a>
+            <span class="card-hotel-type">Гостиница</span>
+            <b class="card-price">От 2500 ₽</b>
+            <a class="button card-link" href="">Подробнее</a>
+            <button class="button card-favorites-btn-checked">В избранное</button>
+            <p class="card-stars stars-3">
+              <span class="visually-hidden">3 звезды</span>
+            </p>
+            <p class="card-rating">Рейтинг: 6,9</p>
+          </li>
+          <li class="cards-item">
+            <a class="card-link" href="">
+              <img class="card-img" src="" alt="GreenTree Inn">
+              <h3 class="card-title">GreenTree Inn</h3>
+            </a>
+            <span class="card-hotel-type">Гостиница</span>
+            <b class="card-price">От 1500 ₽</b>
+            <a class="button card-link" href="">Подробнее</a>
+            <button class="button card-favorites-btn-checked">В избранное</button>
+            <p class="card-stars stars-2">
+              <span class="visually-hidden">2 звезды</span>
+            </p>
+            <p class="card-rating">Рейтинг: 5,0</p>
+          </li>
         </ul>
       </section>
 
-
-
-
-
-
+      <section class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link" href="">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link" href="">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link" href="">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-more">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link" href="">10</a>
+          </li>
+        </ul>
+      </section>
 
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -148,7 +206,6 @@
           <button class="button subscribe-btn" type="submit">Подписаться</button>
         </form>
       </section>
-
     </main>
 
     <footer class="page-footer">
@@ -172,11 +229,8 @@
           </li>
         </ul>
       </section>
-
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
       <a class="footer-copyright" href="https://htmlacademy.ru/" target="_blank"><img class="foooter-copyright" src="" alt="Логотип разработчика"></a>
     </footer>
-
   </body>
 </html>
