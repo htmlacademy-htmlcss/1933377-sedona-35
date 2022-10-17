@@ -27,32 +27,56 @@ body {
 
 .navigation {
   background-color: #ffffff;
+  color: #000000;
 }
+
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-
   text-decoration: none;
 }
 
+.page-wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  width: 1200px;
+ }
+
+ .button {
+  background-color: #756157;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+ }
+
+ .navigation-link-btn {
+  font-size: 16px;
+  line-height: 20px;
+ }
+
 /*Main-banner*/
 
-.main-banner {
+.main-banner-images {
+  color: #000000;
+  background-color: #999999;
   background-image: url("../images/banner-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  background-color: #ffffff;
+
 }
 
 .main-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -60,14 +84,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  background-color: #ffffff;
 }
 
 /*Advantages*/
 
 .advantages-list {
   text-align: center;
-  background-color: #ffffff;
 }
 
 .advantages-title {
@@ -85,7 +107,7 @@ body {
 }
 
 .advantages-item-large {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
 }
 
@@ -99,4 +121,75 @@ body {
 
 .advantages-item-odd {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.complements-list {
+  text-align: center;
+}
+
+.complements-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.complements-item-light {
+  background-color: #ffffff;
+}
+
+.complements-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.complements-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*Find hotel*/
+
+.find-hotel {
+  text-align: center;
+}
+
+.find-hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.find-hotel-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*Subscribe*/
+
+.subscribe {
+  color: #ffffff;
+  background-color: #999999;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subscribe-btn {
+  background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+}
+
+/*Footer*/
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
 }
