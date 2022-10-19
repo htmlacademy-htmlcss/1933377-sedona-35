@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+/* Pages */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  width: 1200px;
+}
+
+.button {
+  background-color: #756157;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+}
+
+/*Main-banner*/
+
+.main-banner-images {
+  color: #000000;
+  background-color: #999999;
+  background-image: url("../images/banner-divider.svg"), url("../images/banner-background.jpg");
+  background-position: bottom center, center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/*Advantages*/
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.advantages-item-large {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.advantages-item-large .advantages-description {
+  color: #ffffff;
+}
+
+.advantages-item-even {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-odd {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.complements-list {
+  text-align: center;
+}
+
+.complements-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.complements-item-light {
+  background-color: #ffffff;
+}
+
+.complements-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.complements-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*Find hotel*/
+
+.find-hotel {
+  text-align: center;
+}
+
+.find-hotel-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.find-hotel-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.find-hotel-btn {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*Subscribe*/
+
+.subscribe {
+  color: #ffffff;
+  background-color: #999999;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.subscribe .subscribe-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe .subscribe-description {
+  margin: 0;
+}
+
+.subscribe-btn {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscribe-catalog {
+
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.subscribe-catalog .subscribe-title {
+  color: #000000;
+  margin: 0;
+}
+
+.subscribe-catalog .subscribe-description {
+  color: #333333;
+  margin: 0;
+}
+
+/*Footer*/
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*Catalog header and filtres*/
+
+.catalog-header {
+  color: #ffffff;
+  background-color: #999999;
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog-header-title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.breadcrumbs-link {
+  margin: 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.filters-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control-name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.filters-btn-submit {
+  background-color: #82b3d3;
+}
+
+.filters-btn-reset {
+  background-color: rgba(28, 28, 28, 0);
+}
+
+/*Catalog sorting*/
+
+.catalog-sort-result {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog-sort-price {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*Catalog cards*/
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.card-hotel-type {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.card-price {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.card-favorites-btn {
+  background-color: #82b3d3;
+}
+
+.card-favorites-btn-checked {
+  background-color: #7db54f;
+}
+
+.card-rating {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+/*Pagination*/
+
+.pagination-item {
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination-item-current {
+  background-color: #f2f2f2;
+}
+
+.pagination-link {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-item-current .pagination-link {
+  color: #333333;
+}
