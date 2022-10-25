@@ -229,8 +229,8 @@ padding: 8px 34px;
   min-height: 384px;
 }
 
-.advantages-item-large {
-
+.advantages-img {
+display: block;
 }
 
 .advantages-item-text {
