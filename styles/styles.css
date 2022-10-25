@@ -65,7 +65,7 @@ body {
 
 .limit-width-content {
   width: 1060px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .button {
@@ -82,9 +82,9 @@ body {
 
 .navigation-logo {
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
+  left: 0;
+  right: 0;
+  top: 0;
   bottom: -0.07%;
   width: 140px;
   }
@@ -358,8 +358,12 @@ padding-top: 103px;
   font-weight: 400;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
 .subscribe-form label {
-  display: inline-block;
   width: 452px;
   margin: 0;
   padding: 0;
@@ -369,10 +373,7 @@ padding-top: 103px;
   width: 452px;
   height: 52px;
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 20px;
   border: 0;
   border-radius: 4px 0 0 4px;
   font-weight: 400;
@@ -387,8 +388,9 @@ background-color: #f2f2f2;
   line-height: 36px;
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
-  display: inline-block;
+  display: block;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
 .subscribe-catalog {
@@ -491,7 +493,7 @@ background-color: #f2f2f2;
   text-decoration: none;
 }
 
-.filters-wrapper {
+.filters-form {
   display: flex;
 }
 
@@ -503,17 +505,17 @@ flex-direction: column;
 }
 
 .filters-group-1 {
-  width: 150px;
+  width: 200px;
 }
 
 .filters-group-2 {
-  width: 150px;
-  margin-left: 70px;
+  width: 200px;
+  margin-left: 20px;
 }
 
 .filters-group-3 {
   width: 288px;
-  margin-left: 141px;
+  margin-left: 90px;
 }
 
 .filters-group-4 {
@@ -550,6 +552,7 @@ flex-direction: column;
 .catalog-sort {
   display: flex;
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .catalog-sort-result {
@@ -589,6 +592,19 @@ border: solid 2px #e5e5e5;
   border: solid 2px #000000;
 }
 /*Catalog cards*/
+
+.cards {
+  margin-bottom: 40px;
+}
+
+.cards-list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+display: grid;
+grid-template-columns: 340px 340px 340px;
+gap: 20px;
+}
 
 .card-link {
   text-decoration: none;
@@ -635,6 +651,10 @@ border: solid 2px #e5e5e5;
 }
 
 /*Pagination*/
+
+.pagination{
+  padding: 40px 0 60px;
+}
 
 .pagination-list {
   margin: 0;
