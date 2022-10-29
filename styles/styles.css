@@ -682,6 +682,27 @@ gap: 16px 20px;
   background-color: #7db54f;
 }
 
+.card-stars {
+  background-image: url(../images/hotel-star.svg);
+  background-position: left;
+  background-repeat: space;
+  margin: 0;
+  height: 17px;
+  align-self: center;
+}
+
+.stars-4 {
+  width: 89px;
+}
+
+.stars-3 {
+  width: 66px;
+}
+
+.stars-2 {
+  width: 42px;
+}
+
 .card-rating {
   margin: 0;
   font-weight: 400;
