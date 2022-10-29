@@ -124,7 +124,7 @@ body {
   max-width: 300px;
   margin-left: auto;
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .navigation-link {
@@ -236,7 +236,7 @@ display: block;
 }
 
 .advantages-item-text {
-padding: 50px;
+padding: 85px;
 padding-top: 103px;
 }
 
@@ -270,8 +270,8 @@ padding-top: 103px;
   background-color: rgba(131, 179, 211, 0.12);
   flex-basis: 400px;
   min-height: 384px;
-  padding: 50px;
-  padding-top: 182px;
+  padding: 85px;
+  padding-top: 80px;
 }
 
 .complements-item-light {
@@ -285,6 +285,7 @@ padding-top: 103px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 102px;
 }
 
 .complements-description {
@@ -556,7 +557,7 @@ flex-direction: column;
 }
 
 .filters-btn-reset {
-  background-color: rgba(28, 28, 28, 0);
+  background-color: transparent;
   padding: 8px;
 }
 /*Catalog sorting*/
