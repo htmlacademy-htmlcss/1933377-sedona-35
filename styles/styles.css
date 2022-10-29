@@ -69,6 +69,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   background-color: #756157;
   color: #ffffff;
   font-size: 16px;
@@ -128,6 +129,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -139,8 +141,15 @@ body {
   padding-bottom: 20px;
 }
 
-.navigation-link-current {
-  border-bottom: solid 2px #756257;
+.navigation-link-current::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+
   }
 
   .navigation-user-link {
