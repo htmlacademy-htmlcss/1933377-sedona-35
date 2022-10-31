@@ -341,6 +341,7 @@ body {
   min-height: 384px;
   padding: 85px;
   padding-top: 80px;
+  padding-bottom: 61px;
 }
 
 .complements-item-light {
@@ -404,7 +405,8 @@ body {
 .find-hotel-description {
   margin: 0;
   margin-bottom: 54px;
-  font-size: 20px;
+  font-size: 22px;
+line-height: 26px;
   font-weight: 400;
   color: #333333;
 }
@@ -471,6 +473,21 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.subscribe-form-input:hover {
+  border: 0;
+}
+
+.subscribe-form-input:focus {
+  border: solid 2px #83b3d3;
+}
+
+.subscribe-form-input:active {
+  border: solid 2px #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subscribe-btn {
