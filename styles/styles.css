@@ -105,6 +105,14 @@ body {
   width: 140px;
 }
 
+.navigation-logo:hover {
+opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
+  }
+
 .navigation {
   background-color: #ffffff;
   color: #000000;
@@ -129,8 +137,8 @@ body {
   padding-left: 16px;
 }
 
-.navigation-list-top .navigation-item:last-child {
-  margin-right: 0;
+.navigation-list-top .navigation-item:not(:last-child) {
+  margin-right: 32px;
 }
 
 
@@ -148,7 +156,6 @@ body {
   color: #000000;
   text-decoration: none;
   display: inline-block;
-  margin-right: 32px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -803,6 +810,7 @@ line-height: 26px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .catalog-sort-price {
@@ -826,6 +834,15 @@ line-height: 26px;
 
 .catalog-sort-price:focus {
   border: solid 2px #68a2ca;
+}
+
+.catalog-sort-price:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Прописываем поведение для :focus-visible */
+.catalog-sort-price:focus-visible {
+  outline: solid 2px #68a2ca;
 }
 
 .catalog-sort-price:active {
