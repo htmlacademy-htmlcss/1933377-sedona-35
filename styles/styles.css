@@ -766,6 +766,7 @@ opacity: 0.5;
   display: flex;
   flex-direction: column;
   border: 0;
+  justify-content: center;
 }
 
 .filters-group-1 {
@@ -790,15 +791,13 @@ opacity: 0.5;
 
 .filters-title {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.control:not(:last-child) {
-  margin-bottom: 19px;
-}
+
 
 .control-name {
   margin: 0;
@@ -807,10 +806,172 @@ opacity: 0.5;
   font-weight: 400;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  line-height: 23px;
+}
+
+
+
+.control:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.control-mark {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  left: 4px;
+bottom: 0;
+  content: url(../images/filter-control-checked.svg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.catalog-filter-label {
+  position: relative;
+  display: flex;
+  margin-right: 2px;
+}
+
+.catalog-filter-label:last-child {
+  margin-right: 0;
+
+}
+
+.catalog-filter-label span{
+  position: absolute;
+right: 20px;
+bottom: 12px;
+color:#000000;
+opacity: 0.3;
+font-family:  inherit;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+}
+
+.range-input {
+  width: 143px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  font-family: inherit;
+  font-size: 18px;
+line-height: 24px;
+padding: 12px 20px;
+  font-weight: 700;
+  appearance: none;
+}
+
+.catalog-filter-label:last-child .range-input{
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  width: 226px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+  border: 0;
+  outline: none;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
 .filters-btn-submit {
   background-color: #82b3d3;
   padding: 8px 50px;
   margin-bottom: 32px;
+  margin-top: 56px;
 }
 
 .filters-btn-submit:hover {
