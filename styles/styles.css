@@ -516,19 +516,20 @@ line-height: 26px;
 }
 
 .subscribe-form-input:hover {
+  background-color: #e6e6e6;
   border: 0;
 }
 
 .subscribe-form-input:focus {
+  background-color: #e6e6e6;
   border: solid 2px #83b3d3;
+
 }
 
 .subscribe-form-input:active {
   border: solid 2px #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
 }
+
 
 .subscribe-btn {
   font-size: 20px;
@@ -546,6 +547,7 @@ line-height: 26px;
 
 .subscribe-btn:focus {
   background-color: #68a2ca;
+
 }
 
 .subscribe-btn:active {
@@ -889,9 +891,7 @@ opacity: 0.5;
   background-position: right 20px center;
   appearance: none;
 }
-.catalog-sort-price:active {
-  border: solid 2px #3f5e72;
-}
+
 
 .catalog-sort-price:hover {
   border: solid 2px #68a2ca;
@@ -899,7 +899,11 @@ opacity: 0.5;
 
 .catalog-sort-price:focus {
   border: solid 2px #68a2ca;
-  outline: solid 2px #68a2ca;
+  outline: none;
+}
+
+.catalog-sort-price:active {
+  border: solid 2px #3f5e72;
 }
 
 .catalog-sort-price:disabled {
@@ -935,6 +939,7 @@ opacity: 0.5;
 
 .sort-view-item:focus {
   border: solid 2px #68a2ca;
+  outline: none;
 }
 
 .sort-view-item:active {
