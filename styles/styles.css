@@ -109,11 +109,11 @@ body {
   width: 140px;
 }
 
-.navigation-logo:hover {
+.navigation-logo[href]:hover {
   opacity: 0.6;
 }
 
-.navigation-logo:active {
+.navigation-logo[href]:active {
   opacity: 0.3;
 }
 
@@ -682,11 +682,11 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
+
 .modal {
   position: relative;
   margin: auto;
