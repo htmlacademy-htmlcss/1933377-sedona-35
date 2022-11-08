@@ -682,20 +682,17 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
+/*
 .modal-container-close {
   display: none;
 }
-
+*/
 .modal {
   position: relative;
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
-}
-
-.modal-find-hotel {
   width: 717px;
 }
 
@@ -714,6 +711,15 @@ body {
   background-position: center;
   background-size: 14px 14px;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -779,6 +785,15 @@ body {
   color: #000000;
 }
 
+.find-hotel-field[type="text"]:hover {
+  background-color: #e6e6e6;
+}
+
+.find-hotel-field[type="text"]:active {
+  background-color: #f2f2f2;
+  border: 2px solid #000000;
+}
+
 .calendar-icon {
   border: none;
   padding: 0;
@@ -820,7 +835,8 @@ body {
 .find-hotel-visitors .find-hotel-field {
   width: 111px;
   height: 48px;
-  padding: 14px 50px;
+  padding: 14px 30px;
+  text-align: center;
   border-radius: 4px;
   border: 0;
   background-color: #f2f2f2;
@@ -840,26 +856,41 @@ body {
 
 .visitors-number-btn {
   position: absolute;
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: 0;
   padding: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  background-size: 14px 14px;
   cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.2;
+}
+
+.visitors-number-btn:hover {
+  opacity: 1;
+}
+
+.visitors-number-btn:focus {
+  opacity: 1;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
 }
 
+.visitors-number-btn:active {
+  opacity: 1;
+}
+
 .visitors-number-less {
-  left: 0;
-  top: 0;
+  left: 13px;
+  top: 14px;
   background-image: url("../images/form-icon-minus.svg");
 }
 
 .visitors-number-more {
-  right: 0;
-  top: 0;
+  right: 13px;
+  top: 14px;
   background-image: url("../images/form-icon-plus.svg");
 }
 
@@ -1278,7 +1309,6 @@ body {
 .filters-btn-reset:active {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.3);
-
 }
 
 .filters-btn-reset:disabled {
