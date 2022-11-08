@@ -1159,6 +1159,21 @@ body {
   appearance: none;
 }
 
+.range-input:hover {
+  background-color: #e6e6e6;
+}
+
+.range-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.range-input:active {
+  background-color: #f2f2f2;
+  outline: 0;
+  border: 2px solid #000000;
+}
+
 .catalog-filter-label:last-child .range-input {
   border-radius: 0 4px 4px 0;
 }
@@ -1299,7 +1314,7 @@ body {
   border-radius: 4px;
   width: 296px;
   height: 53px;
-  padding: 14px 20px;
+  padding: 14px 40px 14px 20px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1395,8 +1410,8 @@ body {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
-  gap: 20px;
+  grid-template-columns: 342px 342px 342px;
+  gap: 18px;
 }
 
 .cards-item {
@@ -1404,6 +1419,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: space-between;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .card-link {
@@ -1562,7 +1579,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #82b3d3;
   border-radius: 4px;
