@@ -216,17 +216,23 @@
                 </div>
               </div>
               <div class="field-group field-group-number">
-                <label class="find-hotel-label" for="find-hotel-children">Дети:</label>
-                <div class="children-tooltip">
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                    лет. Дети до 6 лет размещаются бесплатно.</span>
-                </div>
+                <span class="find-hotel-label form-label-icon">
+                  <label class="find-hotel-label" for="find-hotel-children">Дети:</label>
+                  <span class="children-tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <img class="tooltip-icon" src="images/form-icon-info-blue.svg" width="26" height="26">
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
                 <div class="find-hotel-visitors">
                   <button class="visitors-number-btn visitors-number-less" type="button"></button>
                   <input class="find-hotel-field" type="number" id="find-hotel-children" name="children"
                     placeholder="2">
                   <button class="visitors-number-btn visitors-number-more" type="button"></button>
                 </div>
+
               </div>
             </div>
             <a class="button find-hotel-form-btn" href="#">Найти</a>
