@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Гостиницы в Седоне</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -115,16 +117,16 @@
                       <span>от</span>
                     </label>
                     <label class="catalog-filter-label">
-                     <input class="range-input" type="number" value="9000" name="max-price">
-                     <span>до</span>
+                      <input class="range-input" type="number" value="9000" name="max-price">
+                      <span>до</span>
                     </label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min"  type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max"  type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -146,17 +148,23 @@
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <div class="sort-view">
-            <a class="sort-view-item sort-view-item-tiles sort-view-item-current">
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
-            <a class="sort-view-item sort-view-item-onecard" href="#">
-              <span class="visually-hidden">Показать одну карточку</span>
-            </a>
-            <a class="sort-view-item sort-view-item-table" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-          </div>
+          <ul class="sort-view">
+            <li class="sort-view-item">
+              <a class="sort-view-link sort-view-item-tiles sort-view-link-current">
+                <span class="visually-hidden">Показать плиткой</span>
+              </a>
+            </li>
+            <li class="sort-view-item">
+              <a class="sort-view-link sort-view-item-onecard" href="#">
+                <span class="visually-hidden">Показать одну карточку</span>
+              </a>
+            </li>
+            <li class="sort-view-item">
+              <a class="sort-view-link sort-view-item-table" href="#">
+                <span class="visually-hidden">Показать списком</span>
+              </a>
+            </li>
+          </ul>
         </section>
 
         <section class="cards limit-width-content">
@@ -299,7 +307,7 @@
                 <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18"
                   aria-hidden="true" focusable="false">
                   <path
-                    d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z"/>
+                    d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z" />
                 </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
