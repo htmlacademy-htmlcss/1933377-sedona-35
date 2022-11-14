@@ -199,23 +199,31 @@
               <label class="find-hotel-label" for="find-hotel-date-in">Дата Заезда:</label>
               <input class="find-hotel-field" type="text" id="find-hotel-date-in" name="date-in"
                 placeholder="27 апреля 2020">
-              <button class="calendar-icon" type="button"></button>
+              <button class="calendar-icon" type="button">
+                <span class="visually-hidden">Выбрать дату заезда.</span>
+              </button>
             </p>
             <p class="form-message form-message-error">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="find-hotel-label" for="find-hotel-date-out">Дата Выезда:</label>
               <input class="find-hotel-field" type="text" id="find-hotel-date-out" name="date-out"
                 placeholder="1 сентября 2023">
-              <button class="calendar-icon" type="button"></button>
+              <button class="calendar-icon" type="button">
+                <span class="visually-hidden">Выбрать дату выезда.</span>
+              </button>
             </p>
             <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="number-groups-wrapper">
               <div class="field-group field-group-number">
                 <label class="find-hotel-label" for="find-hotel-adults">Взрослые:</label>
                 <div class="find-hotel-visitors">
-                  <button class="visitors-number-btn visitors-number-less" type="button"></button>
+                  <button class="visitors-number-btn visitors-number-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                  </button>
                   <input class="find-hotel-field" type="number" id="find-hotel-adults" name="adults" placeholder="2">
-                  <button class="visitors-number-btn visitors-number-more" type="button"></button>
+                  <button class="visitors-number-btn visitors-number-more" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых.</span>
+                  </button>
                 </div>
               </div>
               <div class="field-group field-group-number-children">
@@ -232,10 +240,14 @@
                 </span>
 
                 <div class="find-hotel-visitors">
-                  <button class="visitors-number-btn visitors-number-less" type="button"></button>
+                  <button class="visitors-number-btn visitors-number-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей.</span>
+                  </button>
                   <input class="find-hotel-field" type="number" id="find-hotel-children" name="children"
                     placeholder="2">
-                  <button class="visitors-number-btn visitors-number-more" type="button"></button>
+                  <button class="visitors-number-btn visitors-number-more" type="button">
+                    <span class="visually-hidden">Увеличить количество детей.</span>
+                  </button>
                 </div>
 
               </div>
