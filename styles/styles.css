@@ -157,6 +157,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -1130,7 +1131,7 @@ img {
 }
 
 .control:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .control-mark {
